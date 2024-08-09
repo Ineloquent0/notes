@@ -250,6 +250,23 @@ Markdown是一种纯文本格式的标记语言。通过简单的标记语法，
 
 [![测试图片](../images/test.jpg)](https://baidu.com)
 
+图片并排效果：
+
+```
+<center class="half">
+<img src="../images/test.jpg" width=300/>
+<img src="../images/test.jpg" width=300/>
+</center>
+```
+
+效果如下：
+
+<center class="half">
+<img src="../images/test.jpg" width=300/>
+<img src="../images/test.jpg" width=300/>
+</center>
+
+
 **上传本地图片直接点击导航栏的图片标志，选择图片即可**
 
 markdown格式追求的是简单、多平台统一。那么图片的存储就是一个问题，需要用图床，提供统一的外链，这样就不用在不同的平台去处理图片的问题了。才能做到书写一次，各处使用。 关于图床的选择我写了一篇文章，对网上存在的各种方法做了总结，需要的朋友可以看看。[markdown图床](https://link.juejin.cn?target=https%3A%2F%2Fwww.jianshu.com%2Fp%2Fea1eb11db63f)
