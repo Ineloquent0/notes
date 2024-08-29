@@ -65,7 +65,7 @@ $$ x^{y^z}=(1+{\\rm e}^x)^{-2xy^w} $$
 $$f(x,y,z) = 3y^2z \left( 3+\frac{7x+5}{1+y^2} \right) $$
 ```
 
-$$ f(x,y,z) = 3y^2z \left( 3+\frac{7x+5}{1+y^2} \\right) $$
+$$ f(x,y,z) = 3y^2z \left( 3+\frac{7x+5}{1+y^2} \right) $$
 
 有时候要用 `\left.` 或 `\right.` 进行匹配而不显示本身。
 
@@ -484,13 +484,12 @@ $$
 ```
 
 $$
-\begin{array}{rl}
-\verb|y+\cancel{x} | y+\cancel{x}\\
-\verb|\cancel{y+x} | \cancel{y+x}\\
-\verb|y+\bcancel{x} | y+\bcancel{x}\\
-\verb|y+\xcancel{x} | y+\xcancel{x}\\
-\verb|y+\cancelto{0}{x} | y+\cancelto{0}{x}\\ (katex 不支持)
-\verb+\frac{1\cancel9}{\cancel95} = \frac15+& \frac{1\cancel9}{\cancel95} = \frac15 \\
+\require{enclose}\begin{array}{rl}
+\verb|\enclose{horizontalstrike}{x+y}| & \enclose{horizontalstrike}{x+y}\\
+\verb|\enclose{verticalstrike}{\frac xy}| & \enclose{verticalstrike}{\frac xy}\\
+\verb|\enclose{updiagonalstrike}{x+y}| & \enclose{updiagonalstrike}{x+y}\\
+\verb|\enclose{downdiagonalstrike}{x+y}| & \enclose{downdiagonalstrike}{x+y}\\
+\verb|\enclose{horizontalstrike,updiagonalstrike}{x+y}| & \enclose{horizontalstrike,updiagonalstrike}{x+y}\\
 \end{array}
 $$
 
