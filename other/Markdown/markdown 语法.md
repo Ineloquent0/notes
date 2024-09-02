@@ -239,32 +239,32 @@ Markdown是一种纯文本格式的标记语言。通过简单的标记语法，
 
 使用本地图片示例
 ```
-![测试图片](../images/test.jpg)
+![测试图片](/images/test.jpg)
 ![本地图片](本地图片地址)
 
 // 点击图片跳转链接
-[![测试图片](../images/test.jpg)](https://baidu.com)
+[![测试图片](/images/test.jpg)](https://baidu.com)
 ```
 
-![测试图片](../images/test.jpg)
+![测试图片](/images/test.jpg)
 
-[![测试图片](../images/test.jpg)](https://baidu.com)
+[![测试图片](/images/test.jpg)](https://baidu.com)
 
 图片并排效果：
 
 ```
-<center class="half">
-<img src="../images/test.jpg" width=300/>
-<img src="../images/test.jpg" width=300/>
-</center>
+<div align=center>
+<img src="/images/test.jpg" width="48%"/>
+<img src="/images/test.jpg" width="48%"/>
+</div>
 ```
 
 效果如下：
 
-<center class="half">
-<img src="../images/test.jpg" width=300/>
-<img src="../images/test.jpg" width=300/>
-</center>
+<div align=center>
+<img src="/images/test.jpg" width="48%"/>
+<img src="/images/test.jpg" width="48%"/>
+</div>
 
 
 **上传本地图片直接点击导航栏的图片标志，选择图片即可**
