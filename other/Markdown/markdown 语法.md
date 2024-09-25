@@ -417,6 +417,12 @@ cond(no)->op
 
 # 脑图
 
+每次作图时，代码以 `「graph <布局方向>」` 开头
+* TB（Top Bottom） 从上到下
+* BT（Bottom Top） 从下到上
+* RL（Right Left） 从右到左
+* LR（Left Right） 从左到右
+
 ### 从左到右脑图
 ```
 ```mermaid
@@ -485,6 +491,45 @@ graph TB
 
 0 --> 3[分支3]
 3 --> 2.3
+```
+
+# 流程图
+
+每次作图时，代码以 `「graph <布局方向>」` 开头
+* TB（Top Bottom） 从上到下
+* BT（Bottom Top） 从下到上
+* RL（Right Left） 从右到左
+* LR（Left Right） 从左到右
+
+例：
+
+```
+```mermaid
+graph TB
+    Start(开始) --> Open[打开冰箱门]
+    Open --> Put[把大象放进去]
+    Put[把大象放进去] --> IsFit{"冰箱小不小？"}
+    
+    IsFit -->|不小| Close[把冰箱门关上]
+    Close --> End(结束)
+        
+    IsFit -->|小| Change[换个大冰箱]
+    Change --> Open
+```
+```
+
+
+```mermaid
+graph TB
+    Start(开始) --> Open[打开冰箱门]
+    Open --> Put[把大象放进去]
+    Put[把大象放进去] --> IsFit{"冰箱小不小？"}
+    
+    IsFit -->|不小| Close[把冰箱门关上]
+    Close --> End(结束)
+        
+    IsFit -->|小| Change[换个大冰箱]
+    Change --> Open
 ```
 
 # 上下标
